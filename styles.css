@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: url('forest-bg.jpg') no-repeat center center/cover;
+    color: #2C3E50;
+}
+
+/* Логотип */
+.logo img {
+    width: 150px;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Анимации */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Секция каталога */
+.tea-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tea-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tea-card:hover {
+    transform: scale(1.05);
+}
+
+.tea-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #2C3E50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #1A252F;
+}
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: url('forest-bg.jpg') no-repeat center center/cover;
+    color: #2C3E50;
+}
